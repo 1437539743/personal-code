@@ -15,7 +15,7 @@ def get_file(path, all_files):
 
 
 def extract_one_pdf(pdf_path, save_dir, start_page, end_page):
-    pdf_name = os.path.split(pdf_path)[-1]
+    pdf_name = os.path.basename(pdf_path)
     print(f"Processing file -- {pdf_path}")
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
@@ -36,7 +36,7 @@ def extract_many_pdf(pdf_dir_path, save_path, start_page, end_page):
 
     source_files = get_file(pdf_dir_path, [])
     for i, file in enumerate(source_files):
-        file_name = os.path.split(file)[-1]
+        file_name = os.path.basename(file)
         save_file = file.replace(pdf_dir_path, save_path)
         save_dir = save_file.replace(file_name, '')
         extract_one_pdf(file, save_dir, start_page, end_page)
