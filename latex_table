@@ -1,0 +1,131 @@
+%
+\begin{table*}[]
+	\begin{center}
+		\begin{spacing}{0.8}
+			\scriptsize  
+			\caption{Quantitative comparison results in terms of S-measure ($S_\alpha$), max F-measure ($F_\beta$) and MAE score on five benchmark datasets. $\uparrow$ \& $\downarrow$ denote higher and lower is better, respectively. Bold number on each line represents the best performance.}
+			\label{tab_compare}
+			\renewcommand\arraystretch{2}
+			\setlength{\tabcolsep}{0.2mm}{
+				\begin{tabular}{cc|ccccccccccccc|cc|cc}
+					\toprule[1.5pt]
+					& \multirow{4}{*}{Metrics}
+					& - & -& RD3D          & DCF           & DSA2F        
+					& DFM           & CMINet        & SPNet        
+					& HAINet        & CDNet         & JL-DCF         
+					& BPGNet        & DCMF          & cmMS        
+					& CDINet        & DC-Net        & DC-Net  \\
+					
+					&          & -& \cite{DMRA}           & \cite{DMRA}        
+					& \cite{DMRA}           & \cite{DMRA}        & \cite{DMRA}         
+					& \cite{DMRA}        & \cite{DMRA}         & \cite{DMRA}           
+					& \cite{DMRA}        & \cite{DMRA}          & \cite{DMRA}          
+					& \cite{DMRA}        & -                 & -  \\
+					
+					& \multirow{2}{*}{}
+					& CVPR20& ECCV20& AAAI21        & CVPR21        & CVPR21       & MM21            & ICCV21       
+					& ICCV21        & TIP21         & TIP21        & TPAMI21          & TCSVT22      
+					& TIP22         & ECCV20        & MM21         & -                & -       \\ 
+					
+					& \multirow{1}{*}{}
+					& -& -& VGG16          & VGG16         & VGG16         & VGG16            
+					& VGG16          & VGG16         & VGG16         & VGG16          & VGG16          
+					& VGG16          & VGG16         & VGG16         & VGG16          & VGG16    
+					& ResNet50       \\  \hline \hline
+					
+					\multirow{4}{*}{\rotatebox{90}{\textbf{NLPR}}}
+					& $ F_{\beta}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ S_{\alpha}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ E_{\lambda}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ MAE\downarrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .   \\  \hline
+					
+					\multirow{4}{*}{\rotatebox{90}{\textbf{NJUD}}}
+					& $ F_{\beta}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ S_{\alpha}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ E_{\lambda}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ MAE\downarrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .   \\  \hline
+					
+					\multirow{4}{*}{\rotatebox{90}{\textbf{DUT}}}
+						& $ F_{\beta}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ S_{\alpha}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ E_{\lambda}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ MAE\downarrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .   \\  \hline
+					
+					\multirow{4}{*}{\rotatebox{90}{\textbf{STEREO}}}
+						& $ F_{\beta}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ S_{\alpha}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ E_{\lambda}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ MAE\downarrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .   \\  \hline
+					
+					\multirow{4}{*}{\rotatebox{90}{\textbf{LFSD}}}
+						& $ F_{\beta}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ S_{\alpha}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ E_{\lambda}\uparrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .  \\
+					& $ MAE\downarrow$
+					& . & .& .         & .         & .        & .            & . 
+					& .         & .         & .        & .            & .
+					& .         & .         & .        & .            & .   \\
+					\bottomrule[1.5pt]
+			\end{tabular}}
+		\end{spacing}
+	\end{center}
+\vspace{-0.2cm}
+\end{table*}
+%
